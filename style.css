@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    transition: all .3s ease;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: #fe998c;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fa748d;
+}
+header{
+    height: 60px;
+    background: linear-gradient(25deg,#fa748d, #fe998c);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Logo Container --  */
+header .logo{
+    padding: 0 20px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .logo img{
+    height: 50px;
+}
+#menu-btn{
+    color: #fff;
+    font-size: 25px;
+    z-index: 100;
+}
+/* --- Profile Container --  */
+
+header .main-header{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.main-header .fa-magnifying-glass{
+    font-size: 22px;
+    color: #fff;
+    background-color: #fe998c;
+    padding: 9px;
+    border-radius: 25px;
+}
+.main-header .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile img{
+    height: 45px;
+    object-fit: cover;
+    width: 45px;
+    border-radius: 100%;
+}
+.profile .fa-caret-down{
+    font-size: 10px;
+    margin-left: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.user-info{
+    margin-left: 10px;
+    color: #fff;
+}
+#user-name{
+    font-size: 14px;
+}
+#info{
+    font-size: 11px;
+}
+.main-header .fa-calendar-days{
+    font-size: 20px;
+    background-color: #49adee;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+/* /// MAIN - CSS \\ */
+main{
+    width: 100%;
+    display: flex;
+    background-color: #f3f4f6;
+}
+/* NAV-BAR */
+nav{
+    padding: 15px 20px;
+    min-height: calc(100vh-60px);
+    width: 300px;
+    background: url(https://images.unsplash.com/photo-1579545967275-10ae29f0f7ae?q=80&w=2728&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
+    background-size: cover;
+    background-color: #192233;
+    background-blend-mode:soft-light;
+    color: #ffffffbf;
+    transform: translateX(-300px);
+    display: none;
+}
+
+.show{
+    transform: translateX(0);
+    display: block;
+}
+nav li{
+    list-style: none;
+    margin-left: 10px;
+    padding:  7px;
+    border-radius: 5px;
+    
+}
+nav li:hover,
+#active-li
+{
+    background-color: #ffffff20;
+    color: #fff;
+}
+nav a{
+    color: #ffffffbf;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+}
+.nav-btn{
+    margin: 10px 0;
+}
+.nav-btn h3{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.nav-btn i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: grey;
+}
+/* /// ___ Footer ___ CSS \\\  */
+footer{
+    height: 60px;
+    width: 100%;
+    background-color: #fa748d;
+    color: #fff;
+    padding: 20px 30px;
+}
+footer p{
+    letter-spacing: 1px;
+}
+footer p a{
+    color: #192233;
+    text-decoration: none;
+}
