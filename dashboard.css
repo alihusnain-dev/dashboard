@@ -1,81 +1,96 @@
-/* /// -- Container -- \\ */
-.container{
+/* General Container */
+.container {
     width: 100%;
     height: 100%;
     margin: 25px auto;
+    margin-top: 0;
 }
-.dash-header{
+
+/* Dash Header */
+.dash-header {
     background-color: #fff;
 }
-.basic-dash{
+
+/* Basic Dash */
+.basic-dash {
     max-width: 1300px;
     margin: 0 auto;
-    width: 100%;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    width: 100%;
 }
-.basic-dash .box{
+
+.basic-dash .box {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
-.basic-dash .box .text{
+
+.basic-dash .box .text {
     margin-left: 15px;
 }
-.basic-dash .box .fa-car{
+
+.basic-dash .box .fa-car {
     color: #fa748d;
     padding: 15px;
     font-size: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px lightgrey;
 }
-.basic-dash .dash-btn i{
+
+.basic-dash .dash-btn i {
     padding: 8px 12px;
     border-radius: 5px;
     color: #fff;
     font-size: 17px;
     cursor: pointer;
 }
-.dash-btn .fa-star{
+
+.dash-btn .fa-star {
     background-color: #393f46;
 }
-.dash-btn .fa-toolbox{
+
+.dash-btn .fa-toolbox {
     background-color: #4bb1ec;
     margin-left: 15px;
     text-align: center;
 }
-.dash-btn .fa-toolbox span{
+
+.dash-btn .fa-toolbox span {
     font-size: 12px;
     font-weight: 300;
 }
-  
 
-/* -- Reporting - Section - CSS \\\ */
-.report{
+/* Reporting Section */
+.report {
     max-width: 1300px;
     padding: 25px;
     margin: 0 auto;
+    min-height: 100%;
     display: grid;
     grid-template-columns: 48% 48%;
     grid-gap: 3%;
 }
-.box{
+
+.box {
     background-color: #fff;
     border-radius: 5px;
 }
 
-/* --- Bandwidth Reports ---  */
-.box .heading{
+/* Bandwidth Reports */
+.box .heading {
     display: flex;
     justify-content: space-between;
     padding: 7px 10px;
 }
-.heading h3 i{
+
+.heading h3 i {
     color: #b7e7e1;
 }
-.heading .tab-btn button{
+
+.heading .tab-btn button {
     all: unset;
     margin: 0 10px;
     padding: 5px 10px;
@@ -83,80 +98,96 @@
     font-weight: 500;
     cursor: pointer;
 }
+
 .heading .tab-btn button:nth-child(1),
-.heading .tab-btn button:focus{
+.heading .tab-btn button:focus {
     background-color: #0e3c72;
     color: #fff;
 }
-/* range boxs */
-.range-box{
+
+/* Range Boxes */
+.range-box {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 15px;
 }
-/* -- content box --  */
-.content-box{
+
+/* Content Box */
+.content-box {
     padding: 10px 20px;
     cursor: pointer;
 }
-.content-box .text{
+
+.content-box .text {
     display: flex;
     align-items: center;
     padding: 15px 0;
 }
-.content-box .text h3{
+
+.content-box .text h3 {
     font-size: 20px;
     font-weight: 100;
     margin-right: 7px;
 }
-.content-box .text p{
+
+.content-box .text p {
     color: gray;
     font-size: 13px;
 }
-.range{
+
+.range {
     height: 10px;
     background-color: #ecebf0;
     border-radius: 10px;
     overflow: hidden;
 }
-.range .precentage{
+
+.range .precentage {
     height: 10px;
 }
-.range #red{
+
+.range #red {
     width: 63%;
-    background: linear-gradient(#c7232c,#e27372) ;
+    background: linear-gradient(#c7232c, #e27372);
 }
-.range #green{
+
+.range #green {
     width: 32%;
-    background: linear-gradient( #74aa38,#a4ca81);
+    background: linear-gradient(#74aa38, #a4ca81);
 }
-.range #blue{
+
+.range #blue {
     width: 71%;
-    background: linear-gradient( #1c3b78, #6285ab);
+    background: linear-gradient(#1c3b78, #6285ab);
 }
-.range #orange{
+
+.range #orange {
     width: 41%;
-    background: linear-gradient( #e15508, #ec9668);
+    background: linear-gradient(#e15508, #ec9668);
 }
-/* -- graph - image - css  */
-.graph{
+
+/* Graph */
+.graph {
     margin: auto;
     width: 95%;
     margin-bottom: 10px;
 }
-.graph img{
+
+.graph img {
     width: 100%;
 }
-/* /// --- CUBES - Box - CSS \\\  */
-.report .cubes{
+
+/* Cubes Box */
+.report .cubes {
     background-color: transparent;
     display: grid;
     grid-gap: 15px;
     grid-template-columns: auto auto;
+    grid-gap: 15px;
 }
-.report .cubes .cube{
+
+.report .cubes .cube {
     border-radius: 5px;
-    /* width: 250px; */
     height: 220px;
     padding: 10px;
     display: flex;
@@ -166,50 +197,56 @@
     color: #fff;
     cursor: pointer;
 }
-.cubes .cube i{
+
+.cubes .cube i {
     font-size: 40px;
     padding: 20px;
     background-color: #4d4d4d48;
     border-radius: 10px;
 }
-.cubes .cube h2{
-    font-size: 40px;
 
+.cubes .cube h2 {
+    font-size: 40px;
 }
-.cubes .cube p{
+
+.cubes .cube p {
     color: #ffffffb9;
 }
+
 .cubes .cube b,
-.cubes .cube b i{
+.cubes .cube b i {
     font-size: 15px;
     text-align: center;
     padding: 0;
     background-color: transparent;
 }
-/* -- Color the Cubes --  */
-.report-generate{
-    background: radial-gradient(#08d6e5,#32c2ed);
-}
-.profiles{
-    background: radial-gradient(#494777,#2e5575);
-}
-.bug{
-    background: radial-gradient(#41ba93,#0fa564);
-}
-.view{
-    background: radial-gradient(#ffa895,#ff184c);
+
+/* Color the Cubes */
+.report-generate {
+    background: radial-gradient(#08d6e5, #32c2ed);
 }
 
+.profiles {
+    background: radial-gradient(#494777, #2e5575);
+}
 
-/* /// -- Report view - Section - CSS \\\ */
+.bug {
+    background: radial-gradient(#41ba93, #0fa564);
+}
 
-.report-view{
+.view {
+    background: radial-gradient(#ffa895, #ff184c);
+}
+
+/* Report View */
+.report-view {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
     background-color: transparent;
 }
-.report-box{
+
+.report-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,34 +256,37 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.report-box i{
+
+.report-box i {
     font-size: 30px;
     padding: 15px;
     background-color: #0fa5644d;
     border-radius: 15px;
     color: #fff;
 }
-.report-box h2{
-    font-size: 45px;
 
+.report-box h2 {
+    font-size: 45px;
 }
-.report-box p{
+
+.report-box p {
     color: #ffffffb9;
 }
+
 .report-box b,
-.report-box b i{
+.report-box b i {
     font-size: 15px;
     text-align: center;
     padding: 0;
     background-color: transparent;
 }
-.report-box img{
+
+.report-box img {
     width: 100%;
 }
 
-/* /// -- Active - Social Profile - CSS \\\ */
-
-.active-social{
+/* Active Social Profile */
+.active-social {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,41 +294,67 @@
     padding: 20px;
     cursor: pointer;
 }
-.active-social i{
+
+.active-social i {
     font-size: 30px;
     padding: 15px;
     background-color: #a50f0f4d;
     border-radius: 15px;
     color: #fff;
 }
-.active-social h1{
-    font-size: 60px;
 
+.active-social h1 {
+    font-size: 60px;
 }
-.active-social p{
+
+.active-social p {
     color: #ffffffb9;
 }
+
 .active-social b,
-.active-social b i{
+.active-social b i {
     font-size: 15px;
     text-align: center;
     padding: 0;
     background-color: transparent;
 }
-.active-social img{
+
+.active-social img {
     width: 100%;
 }
 
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+    .report {
+        grid-template-columns: 100%;
+        grid-gap: 15px;
+    }
+}
 
-
-
-
-/* ------------------
-----MEDIA Qurey ------
-----------------------
- */
- @media screen and (max-width:780px) {
-    .report{
+@media screen and (max-width: 700px) {
+    .report .cubes {
         grid-template-columns: 100%;
     }
- }
+}
+
+@media screen and (max-width: 500px) {
+    .basic-dash {
+        padding: 25px;
+        flex-direction: column;
+    }
+
+    .basic-dash .box {
+        margin: 10px;
+    }
+}
+
+
+/* //// --- ANIMATIONS ---\\\\  */
+@keyframes load {
+    to{
+        width: 0;
+    }
+    from{
+        width: 100%;
+    }
+}

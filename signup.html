@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="login.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
-    <title>Login - MAH Coder</title>
+    <title>SignUp - MAH Coder</title>
     <!-- fontawesome CDN Link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -157,28 +157,40 @@
         </nav>
         <script src="js/nav.js"></script>
         <div class="container">
-            <form action="login.php" method="post">
-                <h2>Login to MAH</h2>
+            <form action="signup.php" method="post" id="myForm">
+                <h2>Signup to MAH</h2>
+                <div class="field">
+                    <input type="name" name="name" id="name" required>
+                    <label for="name">Name</label>
+                </div>
                 <div class="field">
                     <input type="email" name="email" id="email" required>
                     <label for="email">Email</label>
                 </div>
                 <div class="field">
+                    <input type="mobile" name="mobile" id="mobile" required>
+                    <label for="mobile">Mobile</label>
+                </div>
+                <div class="field">
                     <input type="password" name="password" id="password" required>
                     <label for="password">Password</label>
                 </div>
+                <div class="field">
+                    <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    <label for="confirmPassword">Confirm Password</label>
+                </div>
                 <div class="signup">
-                    <a href="signup.html">
-                        I Don't have an Account?
+                    <a href="index.html">
+                        I already have an Account?
                     </a>
                 </div>
-                <button class="animated-button" type="submit">
+                <button class="animated-button submit-button">
                     <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
                       <path
                         d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                       ></path>
                     </svg>
-                    <span class="text">L O G I N</span>
+                    <span class="text">S I G N U P</span>
                     <span class="circle"></span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
                       <path
@@ -188,6 +200,7 @@
                   </button>
             </form>
         </div>
+        <script src="js/password-error.js"></script>
     </main>
     <footer>
         <p>

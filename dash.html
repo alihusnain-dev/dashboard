@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <title>DashBoard - MAH Coder</title>
+    <!-- fontawesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/favicon.png" alt="MAH Coder's Logo">
+            </a>
+            <i class="fa-solid fa-bars" id="menu-btn"></i>
+        </div>
+        <div class="main-header">
+            <div class="search">
+                <input type="search" placeholder="Search..." id="search-input">
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                <i class="fa-solid fa-xmark" id="cross-icon"></i>
+            </div>
+            <script src="js/search.js"></script>
+            <div class="profile"  id="dropdown">
+                <img src="img/profile.png" alt="Muhammad Ali Husnain">
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="drop-down" id="drop-down">
+                    <ul>
+                        <p>
+                            ACTIVITY
+                        </p>
+                        <li>
+                            <a href="">Chat 99+</a>
+                        </li>
+                        <li>
+                            <a href="">Recover Password</a>
+                        </li>
+                        <p>MY ACCOUNT</p>
+                        <li>
+                            <a href="">Settings</a>
+                        </li>
+                        <li>
+                            <a href="">Messages</a>
+                        </li>
+                        <li>
+                            <a href="">Logs</a>
+                        </li>
+                    </ul>
+                </div>
+                <script src="js/dropdown.js"></script>
+                <div class="user-info">
+                    <p id="user-name">Muhammad Ali Husnain</p>
+                    <p id="info">IT Expert & Developer</p>
+                </div>
+                <i class="fa-regular fa-calendar-days"></i>
+            </div>
+        </div>
+
+    </header>
+    <!-- -- MAIN --  -->
+    <main>
+        <nav class="navbar">
+            <div class="nav-btn">
+                <h3>
+                    Pre Version
+                </h3>
+                <li>
+                    <a href="">
+                        <i class="fa-regular fa-gem"></i> Upgrade to Pro
+                    </a>
+                </li>
+            </div>
+            <div class="nav-btn">
+                <h3>
+                    Menu
+                </h3>
+                <li id="active-li">
+                    <a href=""><i class="fa-solid fa-shuttle-space fa-rotate-270"></i> DashBoard - MAH</a>
+                </li>
+            </div>
+            <div class="nav-btn">
+                <h3>
+                    UI Components
+                </h3>
+                <li>
+                    <a href="">
+                        <i class="fa-regular fa-gem"></i> Elements
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-car"></i> Components
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-table-list"></i> Regular Tables
+                    </a>
+                </li>
+            </div>
+            <div class="nav-btn">
+                <h3>
+                    Widgets
+                </h3>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-chart-line"></i> DashBoard Boxes
+                    </a>
+                </li>
+            </div>
+            <div class="nav-btn">
+                <h3>
+                    Forms
+                </h3>
+                <li>
+                    <a href="">
+                        <i class="fa-regular fa-lightbulb"></i>Controls
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-pencil"></i> Layouts
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-vial-circle-check"></i> Validation
+                    </a>
+                </li>
+            </div>
+            <div class="nav-btn">
+                <h3>
+                    Charts
+                </h3>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-chart-line"></i> Chart-JS
+                    </a>
+                </li>
+            </div>
+        </nav>
+        <script src="js/nav.js"></script>
+        <div class="container">
+            <div class="dash-header">
+                <div class="basic-dash">
+                    <div class="box">
+                        <i class="fa-solid fa-car"></i>
+                        <div class="text">
+                            <h2>
+                                Basic Dashboard
+                            </h2>
+                            <p>
+                                MAH Coder: Unleash the Power of Code in a World of Endless Possibilities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box dash-btn">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-toolbox">
+                            <span>Buttons</span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <div class="report">
+                <div class="box">
+                    <div class="heading">
+                        <h3>
+                            <i class="fa-solid fa-rocket"></i>
+                            BANDWIDTH REPORTS
+                        </h3>
+                        <div class="tab-btn">
+                            <button>Tab 1</button>
+                            <button>Tab 2</button>
+                        </div>
+                    </div>
+                    <hr style="background-color: grey;">
+                    <div class="range-box">
+                        <div class="content-box">
+                            <div class="text">
+                                <h3>
+                                    63%
+                                </h3>
+                                <p>
+                                    Generated Leads
+                                </p>
+                            </div>
+                            <div class="range">
+                                <div class="precentage" id="red"></div>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text">
+                                <h3>
+                                    32%
+                                </h3>
+                                <p>
+                                    Submitted Tickers
+                                </p>
+                            </div>
+                            <div class="range">
+                                <div class="precentage" id="green"></div>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text">
+                                <h3>
+                                    71%
+                                </h3>
+                                <p>
+                                    Server Allocations
+                                </p>
+                            </div>
+                            <div class="range">
+                                <div class="precentage" id="blue"></div>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text">
+                                <h3>
+                                    41%
+                                </h3>
+                                <p>
+                                    Web Depolyed
+                                </p>
+                            </div>
+                            <div class="range">
+                                <div class="precentage" id="orange"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph">
+                        <img src="img/bandwidth-graph.png" alt="">
+                    </div>
+                </div>
+                <div class="box cubes">
+                    <div class="cube report-generate">
+                        <i class="fa-solid fa-gear"></i>
+                        <h2>874</h2>
+                        <p>
+                            Reports Generated
+                        </p>
+                        <b>
+                            <i class="fa-solid fa-chevron-up"></i>
+                            54.9%
+                        </b>
+                    </div>
+                    <div class="cube profiles">
+                        <i class="fa-solid fa-tv"></i>
+                        <h2>17.2K</h2>
+                        <p>
+                            Profiles
+                        </p>
+                        <b>
+                            <i class="fa-solid fa-arrow-left"></i>
+                            62.7%
+                        </b>
+                    </div>
+                    <div class="cube bug">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h2>63.2K</h2>
+                        <p>
+                            Bug Fixed
+                        </p>
+                        <b>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            72.1%
+                        </b>
+                    </div>
+                    <div class="cube view">
+                        <i class="fa-solid fa-eye"></i>
+                        <h2>45.8K</h2>
+                        <p>
+                            Total Views
+                        </p>
+                        <b>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            175.5%
+                        </b>
+                    </div>
+                </div>
+                <div class="box report-view">
+                    <div class="report-box">
+                        <i class="fa-solid fa-gear"></i>
+                        <h2>45.8K</h2>
+                        <p>
+                            Total Views
+                        </p>
+                        <b style="color: #74aa38;">
+                            <i class="fa-solid fa-arrow-up" style="color: #74aa38;"></i>
+                            175.5%
+                        </b>
+                        <img src="img/report-view-1.png" alt="">
+                    </div>
+                    <div class="report-box">
+                        <i class="fa-solid fa-tablet-screen-button"></i>
+                        <h2>5.82K</h2>
+                        <p>
+                            Reports Submitted
+                        </p>
+                        <b style="color: #c7232c;">
+                            <i class="fa-solid fa-arrow-down" style="color: #c7232c;"></i>
+                            54.1%
+                        </b>
+                        <img src="img/report-view-2.png" alt="">
+                    </div>
+                </div>
+                <div class="box active-social">
+                    <i class="fa-regular fa-heart"></i>
+                    <h1>4517.82</h1>
+                    <p>
+                        Active Social Profile
+                    </p>
+                    <p> Down by
+                        <b style="color: #c7232c;">
+                            <i class="fa-solid fa-arrow-down" style="color: #c7232c;"></i>
+                            54.1%
+                        </b> from 30 days ago
+                    </p>
+                    <img src="img/social-active.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Dashboard Artchitecture - MAH Coder. Copyright © 2024 by <a
+                href="https://alihusnain-dev.github.io/portfolio/">MAH Coder</a> | All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
